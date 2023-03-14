@@ -38,7 +38,7 @@ function FormUpdate(){
             alert("Upload Image")
         } 
         if(state) {
-        const data = await axios.post("http://localhost:5000/post", postInfo)
+        const data = await axios.post("https://insta-clone-app-backend.onrender.com/post", postInfo)
         .then((response) => {
           return (response.data);
         })
@@ -46,7 +46,7 @@ function FormUpdate(){
         const formData = new FormData();
         formData.append('postImg', file);
  
-        axios.post("http://localhost:5000/upload", formData)
+        axios.post("https://insta-clone-app-backend.onrender.com/upload", formData)
     
 }  
 if(!postInfo.author || !postInfo.description || !postInfo.location ){
