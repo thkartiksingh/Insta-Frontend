@@ -41,7 +41,7 @@ function PostView() {
                         <img  src={dot}></img>
                     </div>
                     </div>
-                <Image sendIndex={index}/>
+                {/* <Image sendIndex={index}/> */}
                 
                 <div className="footer">
                     <div>
